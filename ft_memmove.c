@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 19:39:01 by feazeved          #+#    #+#             */
-/*   Updated: 2025/05/01 18:00:05 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:09:00 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	ft_memcpy(dest, src, n);
 	return (dest);
 }
-
+/*
 #include <string.h>
 int	main(void)
 {					src  abcdef
@@ -42,4 +42,4 @@ int	main(void)
 	n = 5;
 
 	return (0);
-}
+}*/

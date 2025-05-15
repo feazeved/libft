@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 02:54:59 by feazeved          #+#    #+#             */
-/*   Updated: 2025/04/18 20:52:48 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:13:48 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ static void	ft_populate_itoa(char *str, int nbr, int size, int bol_negative)
 	str[size] = '\0';
 	while (size > bol_negative)
 	{
-                
 		str[--size] = (nbr % 10) + '0';
 		nbr /= 10;
 	}
@@ -41,7 +40,7 @@ static	int	ft_count(int n)
 	while (n)
 	{
 		i++;
-		n /= 10;  
+		n /= 10;
 	}
 	return (i);
 }

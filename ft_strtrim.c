@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/08 19:58:37 by feazeved          #+#    #+#             */
-/*   Updated: 2025/04/17 19:09:55 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:11:42 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ static int	ft_trimmable(const char *set, char c)
 	return (0);
 }
 
-#include <stdio.h>
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*trimmed;
@@ -42,7 +41,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (ft_trimmable(set, s1[finish]))
 		finish--;
 	trimmed = ft_substr(s1, start, (finish - start + 1));
-	printf("%d\n", finish);
 	return (trimmed);
 }
 /*

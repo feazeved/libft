@@ -6,7 +6,7 @@
 /*   By: feazeved <feazeved@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/09 00:39:38 by feazeved          #+#    #+#             */
-/*   Updated: 2025/04/10 20:14:32 by feazeved         ###   ########.fr       */
+/*   Updated: 2025/05/15 22:19:28 by feazeved         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
-	size_t	i;
-	size_t	a;
+	size_t			i;
+	size_t			a;
 	unsigned char	*ptr;
 
-	if (!nmemb || !size)
-		return (malloc(0));
 	i = 0;
 	a = nmemb * size;
+	if (size && (a / size != nmemb))
+		return (NULL);
 	ptr = malloc(a);
 	if (!ptr)
 		return (NULL);
